@@ -641,6 +641,6 @@ Este proyecto está bajo la licencia **MIT**. Ver el archivo `LICENSE` para más
 
 **🤝 Contribuciones siempre son bienvenidas**
 
-**📧 Contacto: tu-email@ejemplo.com**
+**📧 Contacto: alexcode7vzla@gmail.com**
 
 </div>
