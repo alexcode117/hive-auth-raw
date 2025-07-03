@@ -1,0 +1,148 @@
+:root {
+  --background-color: #1a1a1a;
+  --surface-color: #2c2c2c;
+  --primary-color: #a972ff;
+  --primary-hover-color: #bb86fc;
+  --text-color: #f0f0f0;
+  --text-secondary-color: #a0a0a0;
+  --border-color: #444;
+  --success-color: #71dd37;
+  --error-color: #ff3e1d;
+  --font-family: 'Inter', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.auth-card {
+  background-color: var(--surface-color);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.auth-card h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.auth-card p {
+  color: var(--text-secondary-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary-color);
+}
+
+#username {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-color);
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+#username:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(169, 114, 255, 0.3);
+}
+
+#login-button {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#login-button:hover {
+  background-color: var(--primary-hover-color);
+}
+
+#login-button:active {
+  transform: scale(0.98);
+}
+
+#login-button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.output-container {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5rem;
+}
+
+.output-container h2 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-secondary-color);
+  margin-bottom: 1rem;
+}
+
+#output {
+  background-color: var(--background-color);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-size: 0.875rem;
+  min-height: 50px;
+  transition: color 0.3s ease;
+}
+
+#output.success {
+    color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+#output.error {
+    color: var(--error-color);
+    border-color: var(--error-color);
+}

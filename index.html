@@ -1,17 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login con Hive Keychain</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hive Auth App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Login con Hive Keychain</h1>
-    <h2>Iniciar sesión con Hive</h2>
-  <input type="text" id="username" placeholder="Tu nombre de usuario" />
-  <button onclick="login()">Iniciar sesión</button>
-  <pre id="output"></pre>
-
+  <main class="container">
+    <div class="auth-card">
+      <h1>Hive Keychain Auth</h1>
+      <p>Ingresa tu nombre de usuario de Hive para firmar un mensaje de autenticación.</p>
+      <div class="input-group">
+        <label for="username">Usuario de Hive</label>
+        <input type="text" id="username" placeholder="ej: gemini" autocomplete="username">
+      </div>
+      <button id="login-button">Autenticar con Keychain</button>
+      <div class="output-container">
+        <h2>Respuesta de Keychain:</h2>
+        <pre id="output"></pre>
+      </div>
+    </div>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
